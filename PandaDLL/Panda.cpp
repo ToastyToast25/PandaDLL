@@ -107,7 +107,7 @@ int Panda::LoadEntitlements()
 	size_t len = 0;
 	_dupenv_s(&appData, &len, "APPDATA");
 
-	std::ifstream entitlementsFile(std::string(appData) + "\\GlitchedPanda\\EA DLC Unlocker V1\\entitlements.ini");
+	std::ifstream entitlementsFile(std::string(appData) + "\\ToastyToast25\\EA DLC Unlocker\\entitlements.ini");
 	if (!entitlementsFile.is_open())
 	{
 		Debug("Could not load entitlements file");
